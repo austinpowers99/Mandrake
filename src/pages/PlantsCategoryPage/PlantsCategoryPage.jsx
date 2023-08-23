@@ -5,19 +5,20 @@ export default function PlantsCategoryPage() {
     const [categories, setCategories] = useState([]);
 
     const API_KEY = process.env.REACT_APP_API_KEY;
-    const API_URL = 'https://perenual.com/api/';
+    const API_URL = `https://perenual.com/api/species-list?page=1&key=${API_KEY}`;
 
     useEffect(() => {
         async function fetchCategories() {
             try {
-                const response = await fetch(`${API_URL}plantscategory/`, {
+                const response = await fetch (API_URL, {
                     headers: {
                         Authorization: `Token ${API_KEY}`,
                     },
                 });
                 if (response.ok) {
                     const data = await response.json();
-                    setCategories(data.results);
+                    setCategories(data.data);
+                    console.log(data.data)
                 } else {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
@@ -36,9 +37,9 @@ export default function PlantsCategoryPage() {
                     <Link
                         key={category.id}
                         className='category-card-ink'
-                        to={`/exercise/${category.id}`}>
+                        to={`/categories/${category.id}`}>
                         <div>
-                            <h2>{category.name}</h2>
+                            <h2>{category.sunlight}</h2>
                         </div>
                     </Link>
                 ))}

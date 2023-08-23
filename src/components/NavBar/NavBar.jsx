@@ -9,14 +9,16 @@ export default function NavBar({ setUser }) {
 
   return (
     <nav>
-      <Link to="/">Home Page</Link>
-      &nbsp; | &nbsp;
-      <Link to="/categories">Categories</Link>
-      &nbsp; | &nbsp;
-      <Link to="/plants">My Plants</Link>
-      &nbsp; | &nbsp;
-      <Link to="/plants/new">Add New</Link>
-      &nbsp; | &nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+      <div class='nav-flex'>
+        <Link to="/">Home Page</Link>
+        &nbsp; | &nbsp;
+        <Link to="/categories">Categories</Link>
+        &nbsp; | &nbsp;
+        <Link to="/plants">My Plants</Link>
+        &nbsp; | &nbsp;
+        <Link to="/plants/new">Add New</Link>
+        &nbsp; | &nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+      </div>
     </nav>
   );
 }
