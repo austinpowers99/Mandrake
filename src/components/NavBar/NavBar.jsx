@@ -9,7 +9,7 @@ export default function NavBar({ setUser }) {
 
   return (
     <nav>
-      <div class='nav-flex'>
+      <div className='nav-flex'>
         <Link to="/">Home Page</Link>
         &nbsp; | &nbsp;
         <Link to="/categories">Categories</Link>

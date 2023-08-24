@@ -34,7 +34,6 @@ export default function NewPlantForm({ onSubmit }) {
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        // Add form submission logic here (formData)
         onSubmit(formData);
         setFormData({
             commonName: '',
@@ -47,8 +46,6 @@ export default function NewPlantForm({ onSubmit }) {
 
     return (
         <>
-            <h2 className="display-5" id="addNew">
-            </h2>
             <form onSubmit={handleSubmit}>
                 <InputField
                     label="Common Name"

@@ -3,7 +3,8 @@ const Plant = require('../../models/plant');
 
 module.exports = {
     create,
-    new: newRecipe,
+    new: newPlant,
+    delete: deleteNewPlant
 };
 
 async function create(req, res) {
@@ -16,6 +17,15 @@ async function create(req, res) {
     }
 }
 
-function newRecipe(req, res) {
+function newPlant(req, res) {
     res.render('/plants', { title: 'Lettuce turnip the beet!', errorMsg: '' });
+}
+
+async function deleteNewPlant(req, res) {
+    try {
+        await Plant.deleteOne({_id: req.params.id});
+        res.redirect('/plants');
+    } catch (err) {
+        console.log(err)
+    }
 }
