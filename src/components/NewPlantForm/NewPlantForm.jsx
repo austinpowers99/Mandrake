@@ -1,20 +1,5 @@
 import React, { useState } from 'react'
 
-// Custom input component
-function InputField({ label, type, value, onChange }) {
-    return (
-        <label>
-            {label}:
-            <input
-            type={type}
-            value={value}
-            onChange={onChange}
-            required
-            />
-        </label>
-    );
-}
-
 export default function NewPlantForm({ onSubmit }) {
     const [formData, setFormData] = useState({
         commonName: '',
@@ -47,42 +32,47 @@ export default function NewPlantForm({ onSubmit }) {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <InputField
-                    label="Common Name"
-                    type="text"
-                    value={formData.plantCommonName}
+                <label htmlFor='commonName'>Common Name:</label>
+                <input
+                    type='text'
+                    name='commonName'
+                    value={formData.commonName}
                     onChange={handleInputChange}
+                    required
                 />
-                <br />
-                <InputField
-                    label="Sunlight"
-                    type="text"
-                    value={formData.plantSunlight}
+                <label htmlFor='sunlight'>Sunlight:</label>
+                <input
+                    type='text'
+                    name='sunlight'
+                    value={formData.sunlight}
                     onChange={handleInputChange}
+                    required
                 />
-                <br />
-                <InputField
-                    label="Watering"
-                    type="text"
-                    value={formData.plantWatering}
+                <label htmlFor='watering'>Watering:</label>
+                <input
+                    type='text'
+                    name='watering'
+                    value={formData.watering}
                     onChange={handleInputChange}
+                    required
                 />
-                <br />
-                <InputField
-                    label="Description"
-                    type="text"
-                    value={formData.plantDescription}
+                <label htmlFor='growingTips'>Growing Tips:</label>
+                <input
+                    type='text'
+                    name='growingTips'
+                    value={formData.growingTips}
                     onChange={handleInputChange}
+                    required
                 />
-                <br />
-                <InputField
-                    label="Growing Tips"
-                    type="text"
-                    value={formData.plantGrowingTips}
+                <label htmlFor='description'>Description:</label>
+                <textarea
+                    type='text'
+                    name='description'
+                    value={formData.description}
                     onChange={handleInputChange}
+                    required
                 />
-                <br />
-                <button type="submit">Add Plant</button>
+                <button type='submit'>Add Plant</button>
             </form>
         </>
     );

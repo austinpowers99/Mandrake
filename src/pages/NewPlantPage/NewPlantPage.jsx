@@ -1,5 +1,5 @@
-import NewPlantForm from "../../components/NewPlantForm/NewPlantForm";
 import { useState } from "react";
+import NewPlantForm from "../../components/NewPlantForm/NewPlantForm";
 
 export default function NewPlantPage() {
     const [plants, setPlants] = useState([]);

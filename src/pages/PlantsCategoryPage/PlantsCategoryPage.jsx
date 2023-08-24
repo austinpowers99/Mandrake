@@ -54,6 +54,11 @@ export default function PlantsCategoryPage() {
             <div className='category-container'>
                 <div className='category-filters'>
                     <button
+                        className={isCategorySelected('Name') ? 'active' : ''}
+                        onClick={() => handleCategoryToggle('Name')}>
+                        Name
+                    </button>
+                    <button
                         className={isCategorySelected('Full Sun') ? 'active' : ''}
                         onClick={() => handleCategoryToggle('Full Sun')}>
                         Full Sun
@@ -72,11 +77,6 @@ export default function PlantsCategoryPage() {
                         className={isCategorySelected('Average Watering') ? 'active' : ''}
                         onClick={() => handleCategoryToggle('Average Watering')}>
                         Average Watering
-                    </button>
-                    <button
-                        className={isCategorySelected('Name') ? 'active' : ''}
-                        onClick={() => handleCategoryToggle('Name')}>
-                        Name
                     </button>
                 </div>
                 {filteredCategories.map((category) => (
