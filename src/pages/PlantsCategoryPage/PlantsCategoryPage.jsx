@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function ExerciseCategoryPage() {
+export default function PlantsCategoryPage() {
     const [categories, setCategories] = useState([]);
     const navigate = useNavigate();
     const API_KEY = process.env.REACT_APP_API_KEY;
@@ -10,11 +10,7 @@ export default function ExerciseCategoryPage() {
     useEffect(() => {
         async function fetchCategories() {
             try {
-                const response = await fetch(API_URL, {
-                    headers: {
-                        Authorization: `Token ${API_KEY}`,
-                    },
-                });
+                const response = await fetch(API_URL);
                 if (response.ok) {
                     const data = await response.json();
                     setCategories(data.data);
@@ -26,10 +22,10 @@ export default function ExerciseCategoryPage() {
             }
         }
         fetchCategories();
-    }, [API_KEY, API_URL]);
+    }, []);
 
     function handleClick(id) {
-        navigate('/categories/'+ id)
+        navigate('/categories/'+ id);
     }
 
     return (
