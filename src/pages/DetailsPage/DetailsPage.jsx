@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 export default function DetailsPage() {
     const { id } = useParams();
+    const [details, setDetails] = useState([]);
 
     const API_KEY = process.env.REACT_APP_API_KEY;
     const API_URL = `https://perenual.com/api/species/details/${id}?key=${API_KEY}`;
@@ -17,7 +18,7 @@ export default function DetailsPage() {
                 });
                 if (response.ok) {
                     const data = await response.json();
-                    DetailsPage(data.data);
+                    setDetails(data.data);
                 } else {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
@@ -26,13 +27,13 @@ export default function DetailsPage() {
             }
         }
         DetailsPage();
-    }, [API_KEY, API_URL]);
+    }, [API_KEY, API_URL, id]);
 
     return (
-        <div className='category-container'>
-            {id.map((plant) => (
+        <div className='detail-container'>
+            {details.map((detail) => (
                 <div>
-                    <h2>{plant.common_name}</h2>
+                    <h2>{detail.id}</h2>
                 </div>
             ))}
         </div>
