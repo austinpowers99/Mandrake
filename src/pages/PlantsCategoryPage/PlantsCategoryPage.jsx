@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function ExerciseCategoryPage() {
     const [categories, setCategories] = useState([]);
-    
+    const navigate = useNavigate();
     const API_KEY = process.env.REACT_APP_API_KEY;
     const API_URL = `https://perenual.com/api/species-list?page=1&key=${API_KEY}`;
 
@@ -28,19 +28,18 @@ export default function ExerciseCategoryPage() {
         fetchCategories();
     }, [API_KEY, API_URL]);
 
+    function handleClick(id) {
+        navigate('/categories/'+ id)
+    }
+
     return (
         <>
             <h1>Find your green-half by name</h1>
             <div className='category-container'>
                 {categories.map((category) => (
-                    <Link
-                        key={category.id}
-                        className='category-card-link'
-                        to={`/categories/${category.id}`}>
-                        <div>
-                            <h2>{category.common_name}</h2>
-                        </div>
-                    </Link>
+                    <div>
+                        <h2 onClick={() => handleClick(category.id)}>{category.common_name}</h2>
+                    </div>
                 ))}
             </div>
         </>

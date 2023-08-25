@@ -4,7 +4,7 @@ const Plant = require('../../models/plant');
 module.exports = {
     create,
     new: newPlant,
-    delete: deleteNewPlant
+    show
 };
 
 async function create(req, res) {
@@ -21,11 +21,12 @@ function newPlant(req, res) {
     res.render('/plants', { title: 'Lettuce turnip the beet!', errorMsg: '' });
 }
 
-async function deleteNewPlant(req, res) {
+async function show(req, res) {
     try {
-        await Plant.deleteOne({_id: req.params.id});
-        res.redirect('/plants');
-    } catch (err) {
-        console.log(err)
+        const plants = await Plant.find()
+
+        res.json(plants);
+    } catch (error) {
+        res.status(500).json({ error: "Sorry! Can't fetch plants" });
     }
 }

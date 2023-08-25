@@ -8,6 +8,7 @@ import HomePage from '../HomePage/HomePage';
 import MyPlantsPage from '../MyPlantsPage/MyPlantsPage';
 import NewPlantPage from '../NewPlantPage/NewPlantPage';
 import PlantsCategoryPage from '../PlantsCategoryPage/PlantsCategoryPage';
+import DetailsPage from '../DetailsPage/DetailsPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -23,6 +24,7 @@ export default function App() {
               <Route path='/plants' element={<MyPlantsPage />} />
               <Route path='/plants/new' element={<NewPlantPage />} />
               <Route path='/categories' element={<PlantsCategoryPage />} />
+              <Route path='/categories/:id' element={<DetailsPage />} />
             </Routes>
           </>
           :
