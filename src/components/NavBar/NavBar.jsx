@@ -11,9 +11,10 @@ export default function NavBar({ user, setUser }) {
   return (
     <nav>
       <div className='nav-flex'>
+        <div className='container'>
         {/* <img src="/public/mandrake.png" alt='' /> */}
         &nbsp; &nbsp;
-        <Link to="/">Home Page</Link>
+        <Link to="/">Home</Link>
         &nbsp; &nbsp;
         <Link to="/categories">Categories</Link>
         &nbsp; &nbsp;
@@ -29,6 +30,7 @@ export default function NavBar({ user, setUser }) {
             <Link to="/auth">Log In</Link>
           </>
         )}
+        </div>
       </div>
     </nav>
   );

@@ -3,16 +3,15 @@
     flex-direction: column;
     align-items: center;
     background-color: #77F2F2;
-    border-radius: 5vmin;
     width: auto;
     box-sizing: border-box;
-    padding: 5vmin;
+    padding: 6vmin;
 }
 
 input {
     padding: 2.5vmin;
     font-size: 2vmin;
-    border-radius: 1vmin;
+    border-radius: 2vmin;
     border-color: #029a28;
     background-color: #AFD91A;
     text-align: start;
@@ -21,10 +20,6 @@ input {
 .input-container {
     display: grid;
     grid-template-rows: auto 6fr; /* Two rows: one for label, one for input */
-}
-
-input:focus {
-    border-color: #bf2cf5;
 }
 
 .add-button {
@@ -45,4 +40,15 @@ button[type="submit"] {
     grid-column: span 2;
     margin: 3vmin 1vmin 1vmin 1vmin;
     padding: 1vmin;
+}
+
+.new-plant-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    padding: 0 140px 0 100px;
+    background-color: #dd49fe;
+    width: auto;
+    box-sizing: border-box;
 }

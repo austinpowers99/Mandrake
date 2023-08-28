@@ -12,7 +12,6 @@ form {
   height: 15vh;
   padding: 0 140px 0 100px;
   background-color: #AFD91A;
-  border-radius: 5vmin;
   width: auto;
   box-sizing: border-box;
 }
@@ -22,7 +21,6 @@ form {
   justify-content: center;
   align-items: center;
   background-color: #77F2F2;
-  border-radius: 5vmin;
   width: auto;
   box-sizing: border-box;
   padding: 5vmin;

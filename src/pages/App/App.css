@@ -7,6 +7,23 @@
 
 body {
   margin: 0;
-  padding: 4vmin;
   font-family: 'Caveat Brush';
+}
+
+.categories-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  padding: 0 140px 0 100px;
+  background-color: #AFD91A;
+  width: auto;
+  box-sizing: border-box;
+}
+
+.category-container {
+  display: grid;
+  padding: 2.5vmin;
+  font-size: 2vmin;
+  background-color: #dd49fe;
 }

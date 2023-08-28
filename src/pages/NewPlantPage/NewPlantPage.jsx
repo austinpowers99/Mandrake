@@ -10,9 +10,10 @@ export default function NewPlantPage() {
 
     return(
         <>
-            <br></br>
+            <div className='new-plant-h1'>
             <h1>I'm cacti-ng some good vibes</h1>
-            <br></br>
+            </div>
+            <div></div>
             <NewPlantForm onSubmit={addNewPlant} />
             <div className='new-plant-page'>
                 {plants.map((plant, index) => (
