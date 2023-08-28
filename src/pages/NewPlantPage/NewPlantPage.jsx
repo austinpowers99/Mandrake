@@ -18,9 +18,9 @@ export default function NewPlantPage() {
                         <p>Common Name: {plant.commonName}</p>
                         <p>Sunlight: {plant.sunlight}</p>
                         <p>Watering: {plant.watering}</p>
-                        <p>Care level: {plant.care_level}</p>
+                        <p>Care level: {plant.careLevel}</p>
+                        <p>Growth rate: {plant.growth_rate}</p>
                         <p>Description: {plant.description}</p>
-                        <p>Growing Tips: {plant.growingTips}</p>
                     </div>
                 ))}
             </div>

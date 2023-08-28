@@ -6,6 +6,7 @@ const plantSchema = new Schema ({
     sunlight: '',
     watering: '',
     description: '',
+    careLevel: '',
     growingTips: ''
 });
 

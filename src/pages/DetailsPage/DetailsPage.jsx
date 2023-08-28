@@ -30,10 +30,11 @@ export default function DetailsPage() {
         <div className='category-container'>
                 <div>
                     <h3>{plant.common_name}</h3>
-                    <p>{plant.sunlight}</p>
-                    <p>{plant.watering}</p>
-                    <p>{plant.care_level}</p>
-                    <p>{plant.description}</p>
+                    <p>Sunlight: {plant.sunlight}</p>
+                    <p>Watering: {plant.watering}</p>
+                    <p>Care level: {plant.care_level}</p>
+                    <p>Growth rate: {plant.growth_rate}</p>
+                    <p>Description: {plant.description}</p>
                 </div>
         </div>
     );

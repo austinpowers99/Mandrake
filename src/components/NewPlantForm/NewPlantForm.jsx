@@ -6,7 +6,8 @@ export default function NewPlantForm({ onSubmit }) {
         sunlight: '',
         watering: '',
         description: '',
-        growingTips: '',
+        careLevel: '',
+        growth_rate: ''
     });
 
     const handleInputChange = (event) => {
@@ -25,7 +26,8 @@ export default function NewPlantForm({ onSubmit }) {
             sunlight: '',
             watering: '',
             description: '',
-            growingTips: '',
+            careLevel: '',
+            growth_rate: ''
         });
     };
 
@@ -56,11 +58,19 @@ export default function NewPlantForm({ onSubmit }) {
                     onChange={handleInputChange}
                     required
                 />
-                <label htmlFor='growingTips'>Growing Tips:</label>
+                <label htmlFor='careLevel'>Care Level:</label>
                 <input
                     type='text'
-                    name='growingTips'
-                    value={formData.growingTips}
+                    name='careLevel'
+                    value={formData.careLevel}
+                    onChange={handleInputChange}
+                    required
+                />
+                <label htmlFor='growth_rate'>Growth rate:</label>
+                <input
+                    type='text'
+                    name='growth_rate'
+                    value={formData.growth_rate}
                     onChange={handleInputChange}
                     required
                 />
