@@ -20,11 +20,17 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #77F2F2;
+  background-color: #77F5FE;
   width: auto;
-  box-sizing: border-box;
-  padding: 5vmin;
+  padding: 8vmin;
   font-size: 25px;
   line-height: 2;
   text-align: center;
+}
+
+.logo {
+  align-content: center;
+  align-items: flex-end;
+  background-color: #77F5FE;
+  width: auto;
 }

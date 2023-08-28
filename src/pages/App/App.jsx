@@ -14,6 +14,7 @@ export default function App() {
   const [user, setUser] = useState(getUser());
 
   return (
+    <div>
     <main className="App">
       <NavBar user={user} setUser={setUser} />
         <Routes>
@@ -31,5 +32,6 @@ export default function App() {
           )}
         </Routes>
       </main>
+      </div>
     );
   }

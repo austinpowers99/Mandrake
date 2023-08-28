@@ -1,10 +1,11 @@
 import React from 'react'
+import logo from '../img/logo.png'
 
 export default function HomePage() {
   return (
     <>
       <div className="about-title">
-      <h1>Welcome to Mandrake</h1>
+      <h1>— Welcome —</h1>
       </div>
 
       <div className="about-p">
@@ -14,6 +15,7 @@ export default function HomePage() {
           tips for each plant, making it easy to care for your green companions!
           </p>
       </div>
+      <img src={logo} alt="Mandrake Logo" className="logo" />
     </>
   );
 }
