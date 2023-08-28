@@ -1,53 +1,32 @@
-body {
-  margin: 0;
-  background-color: #AFD91A;
-  padding: 4vmin;
-  font-family: 'Caesar Dressing';
-}
-
-.section-heading {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 1vmin;
-  padding: 1vmin;
-  text-align: center;
-  font-size: 2vmin;
-}
-
 form {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 1.5vmin;
+  gap: 2vmin;
   color: #0a0800;
 }
 
-input {
-  padding: 1vmin;
-  font-size: 2vmin;
-  border: .1vmin solid var(--tan-3);
-  border-radius: .5vmin;
-  outline: none;
+.about-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  padding: 0 140px 0 100px;
+  background-color: #AFD91A;
+  border-radius: 5vmin;
+  width: auto;
+  box-sizing: border-box;
 }
 
-input:focus {
-  border-color: var(--orange);
-}
-
-button, a.button {
-  margin: 1vmin;
-  padding: 1vmin;
-  font-size: 2vmin;
+.about-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #77F2F2;
+  border-radius: 5vmin;
+  width: auto;
+  box-sizing: border-box;
+  padding: 5vmin;
+  font-size: 25px;
+  line-height: 2;
   text-align: center;
-  cursor: pointer;
-}
-
-button:disabled, form:invalid button[type="submit"] {
-  cursor: not-allowed;
-  background-color: var(--tan-4);
-}
-
-button[type="submit"] {
-  grid-column: span 2;
-  margin: 1vmin 0 0;
 }

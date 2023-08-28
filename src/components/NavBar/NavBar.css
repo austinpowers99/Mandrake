@@ -1,8 +1,19 @@
 .nav-flex {
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    flex-direction: column;
+    align-content: start;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     background-color: #F7CA4D;
+    height: 100%;
+    width: 4rem;
+    overflow: hidden;
+}
+
+nav img {
+    width: 100vmin;
+}
+
+hr {
+    border: solid 1px #878686;
 }

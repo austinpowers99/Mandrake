@@ -1,17 +1,20 @@
 import React, { useState } from 'react'
+import './NewPlantForm.css';
 
 export default function NewPlantForm({ onSubmit }) {
-    const [formData, setFormData] = useState({
+    const initialFormData = {
         commonName: '',
         sunlight: '',
         watering: '',
         description: '',
         careLevel: '',
         growth_rate: ''
-    });
+    };
 
-    const handleInputChange = (event) => {
-        const { name, value } = event.target;
+    const [formData, setFormData] = useState(initialFormData);
+
+    const handleInputChange = (evt) => {
+        const { name, value } = evt.target;
         setFormData({
             ...formData,
             [name]: value,
@@ -21,18 +24,12 @@ export default function NewPlantForm({ onSubmit }) {
     const handleSubmit = (evt) => {
         evt.preventDefault();
         onSubmit(formData);
-        setFormData({
-            commonName: '',
-            sunlight: '',
-            watering: '',
-            description: '',
-            careLevel: '',
-            growth_rate: ''
-        });
+        setFormData(initialFormData);
     };
 
     return (
         <>
+        <div className='new-plant-form'>
             <form onSubmit={handleSubmit}>
                 <label htmlFor='commonName'>Common Name:</label>
                 <input
@@ -75,7 +72,7 @@ export default function NewPlantForm({ onSubmit }) {
                     required
                 />
                 <label htmlFor='description'>Description:</label>
-                <textarea
+                <input
                     type='text'
                     name='description'
                     value={formData.description}
@@ -84,6 +81,7 @@ export default function NewPlantForm({ onSubmit }) {
                 />
                 <button type='submit'>Add Plant</button>
             </form>
+            </div>
         </>
     );
 }

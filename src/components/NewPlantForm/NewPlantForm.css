@@ -1,0 +1,48 @@
+.new-plant-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #77F2F2;
+    border-radius: 5vmin;
+    width: auto;
+    box-sizing: border-box;
+    padding: 5vmin;
+}
+
+input {
+    padding: 2.5vmin;
+    font-size: 2vmin;
+    border-radius: 1vmin;
+    border-color: #029a28;
+    background-color: #AFD91A;
+    text-align: start;
+}
+
+.input-container {
+    display: grid;
+    grid-template-rows: auto 6fr; /* Two rows: one for label, one for input */
+}
+
+input:focus {
+    border-color: #bf2cf5;
+}
+
+.add-button {
+    padding: 2vmin;
+    font-size: 2vmin;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:disabled, form:invalid button[type="submit"] {
+    cursor: not-allowed;
+    border-radius: 1vmin;
+    border-color: #029a28;
+    background-color: #AFD91A;
+}
+
+button[type="submit"] {
+    grid-column: span 2;
+    margin: 3vmin 1vmin 1vmin 1vmin;
+    padding: 1vmin;
+}

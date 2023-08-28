@@ -15,21 +15,21 @@ export default function App() {
 
   return (
     <main className="App">
-      { user ?
-          <>
-            <NavBar user={user} setUser={setUser} />
-            <Routes>
-              {/* Route components in here */}
-              <Route path='/' element={<HomePage />} />
-              <Route path='/plants' element={<MyPlantsPage />} />
+      <NavBar user={user} setUser={setUser} />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/categories' element={<PlantsCategoryPage />} />
+          <Route path='/categories/:id' element={<DetailsPage />} />
+          {user ? (
+            <>
               <Route path='/plants/new' element={<NewPlantPage />} />
-              <Route path='/categories' element={<PlantsCategoryPage />} />
-              <Route path='/categories/:id' element={<DetailsPage />} />
-            </Routes>
-          </>
-          :
-          <AuthPage setUser={setUser} />
-      }
-    </main>
-  );
-}
+              <Route path='/plants' element={<MyPlantsPage />} />
+            </>
+          ) : (
+            // If the user is not authenticated, render the AuthPage
+            <Route path='/auth' element={<AuthPage setUser={setUser} />} />
+          )}
+        </Routes>
+      </main>
+    );
+  }
