@@ -29,7 +29,11 @@ export default function DetailsPage() {
     return (
         <div className='category-container'>
                 <div>
-                    <h2>{plant.common_name}</h2>
+                    <h3>{plant.common_name}</h3>
+                    <p>{plant.sunlight}</p>
+                    <p>{plant.watering}</p>
+                    <p>{plant.care_level}</p>
+                    <p>{plant.description}</p>
                 </div>
         </div>
     );
