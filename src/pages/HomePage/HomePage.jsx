@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../img/logo.png'
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
           plant species from around the world. Dive into detailed descriptions, care guides, and growing 
           tips for each plant, making it easy to care for your green companions!
           </p>
+          <img src={logo} alt="Mandrake Logo" className="logo" />
       </div>
     </>
   );

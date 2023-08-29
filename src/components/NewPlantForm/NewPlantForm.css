@@ -7,6 +7,8 @@
     box-sizing: border-box;
     padding: 6vmin;
     height: 85vh;
+    font-size: larger;
+    font-family: 'Tilt Prism', cursive;
 }
 
 input {
@@ -40,6 +42,8 @@ button[type="submit"] {
     grid-column: span 2;
     margin: 3vmin 1vmin 1vmin 1vmin;
     padding: 1vmin;
+    font-family: 'Tilt Prism', cursive;
+    font-size: larger;
 }
 
 .new-plant-h1 {
@@ -51,4 +55,5 @@ button[type="submit"] {
     background-color: #dd49fe;
     width: auto;
     box-sizing: border-box;
+    font-family: 'Tilt Prism', cursive;
 }

@@ -1,13 +1,15 @@
 * {
   box-sizing: border-box;
-  font-family: 'Caveat Brush';
+  font-family: 'Tilt Prism', cursive;
   color: #000000;
   text-align: center;
+  font-size: large;
+  font-weight: bolder;
 }
 
 body {
   margin: 0;
-  font-family: 'Caveat Brush';
+  font-family: 'Quicksand', sans-serif;
 }
 
 .categories-h1 {

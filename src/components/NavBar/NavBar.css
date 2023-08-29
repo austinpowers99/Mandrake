@@ -12,7 +12,12 @@
     font-size: large;
 }
 
-body {
-    font-family: 'Caveat Brush', cursive;
+.nav-flex a {
+    font-family: 'Tilt Prism', cursive;
+    text-decoration: none;
+    color: black;
+}
 
+a:hover {
+    color: #77F2F2;
 }
