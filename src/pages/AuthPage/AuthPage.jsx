@@ -1,9 +1,16 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
 
 export default function AuthPage({ setUser }) {
+  // State to manage toggling between sign-up and log-in forms
   const [showSignUp, setShowSignUp] = useState(false);
+  const navigate = useNavigate();
+
+  const handleAuthSuccess = () => {
+    navigate('/plants/new');
+  };
 
   return (
     <main className='auth-page'>
@@ -11,15 +18,16 @@ export default function AuthPage({ setUser }) {
       <div>
         <h1>Welcome!</h1>
         <br /><br />
-        <SignUpForm setUser={setUser} />
+        <SignUpForm onSuccess={handleAuthSuccess} />
       </div>
         :
       <div>
         <h1>Welcome back!</h1>
         <br /><br />
-        <LoginForm setUser={setUser} />
+        <LoginForm onSuccess={handleAuthSuccess} setUser={setUser} />
       </div>
       }
+      {/* Toggle button to switch between sign-up and log-in forms */}
       <button onClick={() => setShowSignUp(!showSignUp)}>{showSignUp ? 'Log In' : 'Sign Up'}</button>
     </main>
   );

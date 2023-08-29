@@ -8,7 +8,7 @@ export default function MyPlants({ plants }) {
       <h1>Lettuce turnip the beet!</h1>
       </div>
 
-      <div className='new-plant-page'>
+      <div className='new-plant-card'>
         {plants.map((plant, index) => (
           <div key={index}>
             <p>Common Name: {plant.commonName}</p>

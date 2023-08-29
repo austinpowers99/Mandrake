@@ -25,11 +25,18 @@ body {
 
 .category-container {
   display: grid;
-  padding: 2.5vmin;
+  padding: 2vmin;
   font-size: 2vmin;
-  background-color: #dd49fe;
+  background-color: #06f9f9;
   padding: auto;
   height: 100vh;
+  gap: 2vmin;
+}
+
+.category-card {
+  border: 2px solid rgb(176, 250, 244);
+  background-color: rgb(176, 250, 244);
+  border-radius: 10px;
 }
 
 .auth-page {
@@ -49,4 +56,11 @@ body {
   background-color: #AFD91A;
   width: auto;
   box-sizing: border-box;
+}
+
+.new-plant-card {
+  border: 2px solid rgb(239, 145, 248);
+  background-color: rgb(234, 22, 253);
+  padding: 20px 0 0 165px;
+  height: 85vh;
 }
