@@ -42,8 +42,10 @@ export default function App() {
               <Route path='/plants' element={<MyPlantsPage plants={plants}/>} />
             </>
           ) : (
-            // If the user is not authenticated, render the AuthPage
+            <>
+            {/* // If the user is not authenticated, render the AuthPage */}
             <Route path='/auth' element={<AuthPage setUser={setUser} />} />
+            </>
           )}
         </Routes>
       </main>

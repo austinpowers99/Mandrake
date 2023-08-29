@@ -8,7 +8,8 @@ This is your passport to the wonderful world of plants and botanicals. Explore a
 - Integraded API for plant ideas.
 
 ## 🫧 Preview:
-
+![Home Page](/var/folders/72/flscwx1x2tl92gkbvfdt5r640000gn/T/TemporaryItems/NSIRD_screencaptureui_avXAXq/Screenshot 2023-08-29 at 7.11.49 AM.png)
+![Add your plant]()
 
 ## 📌 Technologies Used:
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
@@ -30,6 +31,6 @@ Click the link 👉🏼 [Mandrake](https://mandrake-app-d113a6b8d70e.herokuapp.c
 - [Link to ERD](https://lucid.app/lucidchart/78e30b1a-1f93-4dcb-ba41-43f21242c26b/edit?beaconFlowId=718E8256661A13A5&invitationId=inv_d9265e1e-ae6a-498c-a8a0-4d731b0f97e4&page=0_0#)
 
 ## 🧊 Next Steps and Icebox Items:
-- 
-- 
-- 
+1. Add a delete & edit functionality for the user's inputs.
+2. Create a plant questionnaire for personalized recommendations.
+3. Add a search feature.
