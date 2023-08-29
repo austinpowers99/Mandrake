@@ -59,7 +59,7 @@ body {
 }
 
 .new-plant-card {
-  border: 2px solid rgb(239, 145, 248);
+  /* border: 2px solid rgb(239, 145, 248); */
   background-color: rgb(234, 22, 253);
   padding: 20px 0 0 165px;
   height: 85vh;

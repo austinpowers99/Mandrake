@@ -10,6 +10,7 @@ import NewPlantPage from '../NewPlantPage/NewPlantPage';
 import PlantsCategoryPage from '../PlantsCategoryPage/PlantsCategoryPage';
 import DetailsPage from '../DetailsPage/DetailsPage';
 import * as plantAPI from '../../utilities/plant-api';
+import handleAuthSuccess from '../AuthPage/AuthPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
