@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
@@ -9,9 +9,24 @@ import MyPlantsPage from '../MyPlantsPage/MyPlantsPage';
 import NewPlantPage from '../NewPlantPage/NewPlantPage';
 import PlantsCategoryPage from '../PlantsCategoryPage/PlantsCategoryPage';
 import DetailsPage from '../DetailsPage/DetailsPage';
+import * as plantAPI from '../../utilities/plant-api';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
+  const [plants, setPlants] = useState([]);
+
+  function addPlant(newPlant) {
+    setPlants([...plants, newPlant]);
+  }
+
+  useEffect(function () {
+    async function getPlants() {
+        const plants = await plantAPI.getAll();
+        console.log(plants)
+        setPlants(plants);
+        }
+    getPlants();
+}, []);
 
   return (
     <div>
@@ -23,8 +38,8 @@ export default function App() {
           <Route path='/categories/:id' element={<DetailsPage />} />
           {user ? (
             <>
-              <Route path='/plants/new' element={<NewPlantPage />} />
-              <Route path='/plants' element={<MyPlantsPage />} />
+              <Route path='/plants/new' element={<NewPlantPage setPlants={addPlant}/>} />
+              <Route path='/plants' element={<MyPlantsPage plants={plants}/>} />
             </>
           ) : (
             // If the user is not authenticated, render the AuthPage

@@ -26,6 +26,8 @@ body {
   padding: 2.5vmin;
   font-size: 2vmin;
   background-color: #dd49fe;
+  padding: auto;
+  height: 100vh;
 }
 
 .auth-page {
@@ -34,4 +36,15 @@ body {
   background-color: #77F2F2;
   padding: auto;
   height: 100vh;
+}
+
+.my-plants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  padding: 0 140px 0 100px;
+  background-color: #AFD91A;
+  width: auto;
+  box-sizing: border-box;
 }

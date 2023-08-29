@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './NewPlantForm.css';
 
-export default function NewPlantForm({ onSubmit }) {
+export default function NewPlantForm({ addNewPlant }) {
     const initialFormData = {
         commonName: '',
         sunlight: '',
@@ -23,7 +23,7 @@ export default function NewPlantForm({ onSubmit }) {
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        onSubmit(formData);
+        addNewPlant(formData);
         setFormData(initialFormData);
     };
 

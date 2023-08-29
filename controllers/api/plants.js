@@ -1,10 +1,10 @@
-import Plant from '../../models/plant';
 const Plant = require('../../models/plant');
 
 module.exports = {
     create,
     new: newPlant,
-    show
+    show,
+    index
 };
 
 async function create(req, res) {
@@ -29,4 +29,9 @@ async function show(req, res) {
     } catch (error) {
         res.status(500).json({ error: "Sorry! Can't fetch plants" });
     }
+}
+
+async function index(req, res) {
+    const plants = await Plant.find({}).sort('commonName');
+    res.json(plants);
 }
