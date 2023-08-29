@@ -27,3 +27,11 @@ body {
   font-size: 2vmin;
   background-color: #dd49fe;
 }
+
+.auth-page {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #77F2F2;
+  padding: auto;
+  height: 100vh;
+}

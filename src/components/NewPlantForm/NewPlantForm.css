@@ -6,6 +6,7 @@
     width: auto;
     box-sizing: border-box;
     padding: 6vmin;
+    height: 85vh;
 }
 
 input {
@@ -19,7 +20,6 @@ input {
 
 .input-container {
     display: grid;
-    grid-template-rows: auto 6fr; /* Two rows: one for label, one for input */
 }
 
 .add-button {

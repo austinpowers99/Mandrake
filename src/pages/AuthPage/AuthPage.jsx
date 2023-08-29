@@ -5,14 +5,21 @@ import LoginForm from '../../components/LoginForm/LoginForm';
 export default function AuthPage({ setUser }) {
   const [showSignUp, setShowSignUp] = useState(false);
   return (
-    <main>
-      <h1>Welcome to Mandrake</h1>
-      <button onClick={() => setShowSignUp(!showSignUp)}>{showSignUp ? 'Log In' : 'Sign Up'}</button>
+    <main className='auth-page'>
       { showSignUp ?
-          <SignUpForm setUser={setUser} />
-          :
-          <LoginForm setUser={setUser} />
+      <div>
+        <h1>Welcome to Mandrake</h1>
+        <br /><br />
+        <SignUpForm setUser={setUser} />
+      </div>
+        :
+      <div>
+        <h1>Welcome back!</h1>
+        <br /><br />
+        <LoginForm setUser={setUser} />
+      </div>
       }
+      <button onClick={() => setShowSignUp(!showSignUp)}>{showSignUp ? 'Log In' : 'Sign Up'}</button>
     </main>
   );
 }
