@@ -1,5 +1,6 @@
 .nav-flex {
     display: flex;
+    align-content: center;
     flex-direction: column;
     justify-content: space-between;
     background-color: #F5BC2C;
