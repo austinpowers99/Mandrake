@@ -8,8 +8,7 @@ This is your passport to the wonderful world of plants and botanicals. Explore a
 - Integraded API for plant ideas.
 
 ## 🫧 Preview:
-![Home Page](/var/folders/72/flscwx1x2tl92gkbvfdt5r640000gn/T/TemporaryItems/NSIRD_screencaptureui_avXAXq/Screenshot 2023-08-29 at 7.11.49 AM.png)
-![Add your plant]()
+![Home Page](/src/![alt](https://homepage.png))
 
 ## 📌 Technologies Used:
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
