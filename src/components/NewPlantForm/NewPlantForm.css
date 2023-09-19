@@ -3,12 +3,10 @@
     flex-direction: column;
     align-items: center;
     background-color: #77F2F2;
-    width: auto;
-    box-sizing: border-box;
-    padding: 6vmin;
-    height: 85vh;
-    font-size: larger;
+    padding: 5vmin 10vmin 5vmin 25vmin;
     font-family: 'Tilt Prism', cursive;
+    height: 100vh;
+    padding-bottom: 120px;
 }
 
 input {
@@ -18,10 +16,6 @@ input {
     border-color: #029a28;
     background-color: #AFD91A;
     text-align: start;
-}
-
-.input-container {
-    display: grid;
 }
 
 .add-button {
@@ -46,14 +40,7 @@ button[type="submit"] {
     font-size: larger;
 }
 
-.new-plant-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-    padding: 0 140px 0 100px;
-    background-color: #dd49fe;
-    width: auto;
-    box-sizing: border-box;
-    font-family: 'Tilt Prism', cursive;
-}
+/* .new-plant-page {
+    height: 100vh;
+    padding: 10vmin 10vmin 10vmin 25vmin;
+} */

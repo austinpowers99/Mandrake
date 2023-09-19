@@ -4,11 +4,9 @@ import '../App/App.css';
 export default function MyPlants({ plants }) {
   return (
     <>
-      <div className="my-plants">
-      <h1>Lettuce turnip the beet!</h1>
-      </div>
-
       <div className='new-plant-card'>
+        <h1>Lettuce turnip the beet!</h1>
+        <br />
         {plants.map((plant, index) => (
           <div key={index}>
             <p>Common Name: {plant.commonName}</p>

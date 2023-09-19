@@ -1,12 +1,12 @@
 .nav-flex {
     display: flex;
-    align-content: center;
+    /* align-content: center; */
     flex-direction: column;
     justify-content: space-between;
     background-color: #F5BC2C;
-    width: 9rem;
+    width: 8rem;
     float: left;
-    position: relative;
+    position:absolute;
     height: 100vh;
     padding-bottom: 120px;
     font-size: large;

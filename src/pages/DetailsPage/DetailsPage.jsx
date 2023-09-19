@@ -24,7 +24,7 @@ export default function DetailsPage() {
             }
         }
         fetchId();
-    }, []);
+    }, [API_URL]);
 
     return (
         <div className='category-container'>

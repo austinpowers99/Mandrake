@@ -28,8 +28,9 @@ export default function NewPlantForm({ addNewPlant }) {
     };
 
     return (
-        <>
         <div className='new-plant-form'>
+            <h1>I'm cacti-ng some good vibes</h1>
+            <br />
             <form onSubmit={handleSubmit}>
                 <label htmlFor='commonName'>Common Name:</label>
                 <input
@@ -81,7 +82,6 @@ export default function NewPlantForm({ addNewPlant }) {
                 />
                 <button type='submit'>Add Plant</button>
             </form>
-            </div>
-        </>
+        </div>
     );
 }

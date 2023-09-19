@@ -22,7 +22,7 @@ export default function PlantsCategoryPage() {
             }
         }
         fetchCategories();
-    }, []);
+    }, [API_URL]);
 
     function handleClick(id) {
         navigate('/categories/'+ id);
@@ -31,14 +31,14 @@ export default function PlantsCategoryPage() {
     return (
         <>
             <div className='categories-h1'>
+                <div className='category-container'>
                 <h1>Find your green-half by name</h1>
-            </div>
-            <div className='category-container'>
-                {categories.map((category) => (
-                    <div className='category-card'>
-                        <h2 onClick={() => handleClick(category.id)}>{category.common_name}</h2>
-                    </div>
-                ))}
+                    {categories.map((category) => (
+                        <div className='category-card'>
+                            <h2 onClick={() => handleClick(category.id)}>{category.common_name}</h2>
+                        </div>
+                    ))}
+                </div>
             </div>
         </>
     );

@@ -45,7 +45,7 @@ export default function App() {
           ) : (
             <>
             {/* // If the user is not authenticated, render the AuthPage */}
-            <Route path='/auth' element={<AuthPage setUser={setUser} />} />
+            <Route path='/auth' element={<AuthPage setUser={setUser} handleAuthSuccess={handleAuthSuccess} />} />
             </>
           )}
         </Routes>

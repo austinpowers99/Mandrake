@@ -1,25 +1,30 @@
+.auth-page {
+  background-color: #77F2F2;
+  height: 100vh;
+  padding: 10vmin 10vmin 10vmin 25vmin;
+}
+
 form {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 2vmin;
-}
-
-.about-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15vh;
-  padding: 0 140px 0 100px;
-  background-color: #AFD91A;
-  width: auto;
-  box-sizing: border-box;
+  padding: 6vmin;
+  border-radius: 5vmin;
+  background-color: #03bce6;
 }
 
 .about-p {
-  align-items: center;
-  background-color: #77F5FE;
-  height: 85vh;
+  background-color: #23ff74;
   line-height: 3;
   text-align: center;
-  padding: 20vmin 10vmin 20vmin 30vmin;
+  padding: 10vmin 10vmin 10vmin 25vmin;
+  height: 100vh;
+  padding-bottom: 120px;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.about-container {
+  background-color: #77F5FE;
+  padding: 8vmin;
+  border-radius: 5vmin;
 }
