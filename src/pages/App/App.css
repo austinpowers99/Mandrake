@@ -5,13 +5,18 @@
   text-align: center;
 }
 
-.categories-h1 {
+.categories {
   background-color: #77F2F2;
-  line-height: 3;
-  text-align: center;
   padding: 5vmin 5vmin 5vmin 21vmin;
   height: 100vh;
-  padding-bottom: 120px;
+  padding-bottom: 12vmin;
+}
+
+.categories-id {
+  background-color: #77F2F2;
+  padding: 5vmin 5vmin 5vmin 21vmin;
+  height: 100vh;
+  padding-bottom: 12vmin;
 }
 
 .category-container {
@@ -21,7 +26,7 @@
   justify-content: center;
   background-color: #ede101;
   padding: 6vmin;
-  border-radius: 5vmin;
+  border-radius: 4vmin;
 }
 
 .category-card {

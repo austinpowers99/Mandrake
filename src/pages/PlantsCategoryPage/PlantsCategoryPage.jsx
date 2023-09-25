@@ -30,7 +30,7 @@ export default function PlantsCategoryPage() {
 
     return (
         <>
-            <div className='categories-h1'>
+            <div className='categories'>
                 <div className='category-container'>
                 <h1>Find your green-half by name</h1>
                     {categories.map((category) => (
