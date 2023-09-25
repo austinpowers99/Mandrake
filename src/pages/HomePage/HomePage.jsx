@@ -6,8 +6,9 @@ export default function HomePage() {
     <>
 
       <div className="about-p">
+      <h1>— Welcome To Mandrake —</h1>
+      <br />
         <div className='about-container'>
-        <h1>— Welcome To Mandrake —</h1>
         <br />
           <p>
           This is your passport to the wonderful world of plants and botanicals. Explore a vast variety of 

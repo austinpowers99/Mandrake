@@ -6,7 +6,7 @@
 }
 
 .categories-h1 {
-  background-color: #18fc6c;
+  background-color: #77F2F2;
   line-height: 3;
   text-align: center;
   padding: 5vmin 5vmin 5vmin 21vmin;
@@ -15,35 +15,51 @@
 }
 
 .category-container {
-  display: grid;
-  grid-gap: 2vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+  justify-content: center;
   background-color: #ede101;
   padding: 6vmin;
   border-radius: 5vmin;
 }
 
 .category-card {
-  background-color: #62ddffc7;
-  padding: 4vmin;
-  border-radius: 4vmin;
+  align-items: center;
+  background-color: #69f77ec7;
+  padding: 3vmin;
+  border: 3px solid #2cc102;
+  border-radius: 3vmin;
   font-family: 'Tilt Prism', cursive;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
 }
 
 .my-plants {
-  background-color: #AFD91A;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 15vh;
-  padding: 0 140px 0 100px;
-  width: auto;
-  box-sizing: border-box;
+  background-color: #2bfa5b;
+  padding: 10vmin 5vmin 5vmin 21vmin;
+  height: 100vh;
+  grid-gap: 3vmin;
+  display: grid;
 }
 
-.new-plant-card {
-  border: 10vmin;
-  background-color: #18fc6c;
-  padding: 5vmin 5vmin 5vmin 21vmin;
-  height: 100vh;
-  /* padding-bottom: 120px; */
+.plant-card {
+  background-color: #31d1fec7;
+  padding: 3vmin;
+  border-radius: 2vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 3px solid #77F5FE;
+}
+
+@media only screen and (max-width: 767px) {
+  .my-plants {
+    grid-template-columns: 1fr; 
+  }
+
+  .plant-card {
+    padding: 3vmin; 
+  }
 }

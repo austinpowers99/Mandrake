@@ -14,9 +14,9 @@ form {
 }
 
 .about-p {
-  background-color: #23ff74;
+  background-color: #2bfa5b;
   line-height: 3;
-  text-align: center;
+  text-align: end;
   padding: 10vmin 10vmin 10vmin 25vmin;
   height: 100vh;
   padding-bottom: 120px;
@@ -25,6 +25,6 @@ form {
 
 .about-container {
   background-color: #77F5FE;
-  padding: 8vmin;
+  padding: 6vmin;
   border-radius: 5vmin;
 }
