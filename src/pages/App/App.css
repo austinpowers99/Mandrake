@@ -8,14 +8,14 @@
 .categories {
   background-color: #77F2F2;
   padding: 5vmin 5vmin 5vmin 21vmin;
-  height: 100vh;
+  /* height: 100vh; */
   padding-bottom: 12vmin;
 }
 
 .categories-id {
   background-color: #77F2F2;
   padding: 5vmin 5vmin 5vmin 21vmin;
-  height: 100vh;
+  /* height: 100vh; */
   padding-bottom: 12vmin;
 }
 
@@ -43,8 +43,8 @@
 
 .my-plants {
   background-color: #2bfa5b;
-  padding: 10vmin 5vmin 5vmin 21vmin;
-  height: 100vh;
+  padding: 5vmin 5vmin 5vmin 21vmin;
+  /* height: 115vh; */
   grid-gap: 3vmin;
   display: grid;
 }

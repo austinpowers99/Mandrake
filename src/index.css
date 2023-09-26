@@ -15,10 +15,10 @@ form {
 
 .about-p {
   background-color: #2bfa5b;
-  line-height: 3;
+  line-height: 2.5;
   text-align: end;
   padding: 10vmin 10vmin 10vmin 25vmin;
-  height: 100vh;
+  /* height: 100vh; */
   padding-bottom: 120px;
   font-family: 'Tilt Prism', cursive;
 }
