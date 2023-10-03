@@ -7,15 +7,7 @@
 
 .categories {
   background-color: #77F2F2;
-  padding: 5vmin 5vmin 5vmin 21vmin;
-  /* height: 100vh; */
-  padding-bottom: 12vmin;
-}
-
-.categories-id {
-  background-color: #77F2F2;
-  padding: 5vmin 5vmin 5vmin 21vmin;
-  /* height: 100vh; */
+  padding: 5vmin;
   padding-bottom: 12vmin;
 }
 
@@ -25,20 +17,21 @@
   gap: 2vmin;
   justify-content: center;
   background-color: #ede101;
-  padding: 6vmin;
+  padding: 3vmin;
   border-radius: 4vmin;
+  margin: 2vmin;
 }
 
 .category-card {
   align-items: center;
   background-color: #69f77ec7;
-  padding: 3vmin;
-  border: 3px solid #2cc102;
+  padding: 2vmin;
+  border: .5vmin solid #2cc102;
   border-radius: 3vmin;
   font-family: 'Tilt Prism', cursive;
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 25vmin;
 }
 
 .my-plants {

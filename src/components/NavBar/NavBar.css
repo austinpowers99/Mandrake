@@ -1,20 +1,30 @@
-.nav-flex {
+/* .nav-flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #F5BC2C;
     width: 7rem;
     float: left;
-    position:absolute;
     height: 100vh;
     padding-bottom: 120px;
     font-size: large;
+} */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2.5vmin;
+    color: #000000;
+    padding: 2vmin;
+    background-color: #2cc102;
 }
 
-.nav-flex a {
+.nav a {
     font-family: 'Tilt Prism', cursive;
+    padding-right: 6vmin;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 a:hover {

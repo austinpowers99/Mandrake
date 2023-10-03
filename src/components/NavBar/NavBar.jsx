@@ -10,7 +10,7 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav>
-      <div className='nav-flex'>
+      <div className='nav'>
         &nbsp; &nbsp;
         <Link to="/">Home</Link>
         &nbsp; &nbsp;

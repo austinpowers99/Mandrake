@@ -1,7 +1,7 @@
 .auth-page {
   background-color: #77F2F2;
   height: 100vh;
-  padding: 10vmin 10vmin 10vmin 25vmin;
+  padding: 10vmin;
 }
 
 form {
@@ -17,9 +17,8 @@ form {
   background-color: #2bfa5b;
   line-height: 2.5;
   text-align: end;
-  padding: 10vmin 10vmin 10vmin 25vmin;
-  /* height: 100vh; */
-  padding-bottom: 120px;
+  padding: 10vmin;
+  padding-bottom: 32vmin;
   font-family: 'Tilt Prism', cursive;
 }
 
