@@ -37,7 +37,6 @@
 .my-plants {
   background-color: #2bfa5b;
   padding: 5vmin 5vmin 5vmin 21vmin;
-  /* height: 115vh; */
   grid-gap: 3vmin;
   display: grid;
 }

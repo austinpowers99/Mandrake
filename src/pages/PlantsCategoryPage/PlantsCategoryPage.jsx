@@ -34,7 +34,6 @@ export default function PlantsCategoryPage() {
             <h1>Find your green-half by name</h1>
             <br />
                 <div className='category-container'>
-
                     {categories.map((category) => (
                         <div className='category-card'>
                             <h2 onClick={() => handleClick(category.id)}>{category.common_name}</h2>
