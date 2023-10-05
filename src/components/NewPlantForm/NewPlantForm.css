@@ -3,10 +3,8 @@
     flex-direction: column;
     align-items: center;
     background-color: #77F2F2;
-    padding: 5vmin 10vmin 5vmin 25vmin;
+    padding: 5vmin;
     font-family: 'Tilt Prism', cursive;
-    /* height: 100vh; */
-    padding-bottom: 120px;
 }
 
 input {
