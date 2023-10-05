@@ -12,7 +12,6 @@ Click the link 👉🏼 [Mandrake](https://mandrake-app-d113a6b8d70e.herokuapp.c
 
 ## 🫧 Preview:
 ![Home Page](/src/pages/img/homepage.png)
-![Add your own](/src/pages/img/new.png)
 
 ## 📌 Technologies Used:
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
@@ -36,4 +35,4 @@ Click the link 👉🏼 [Mandrake](https://mandrake-app-d113a6b8d70e.herokuapp.c
 - [ ] Add a delete & edit functionality for the user's inputs.
 - [ ] Create a plant questionnaire for personalized recommendations.
 - [ ] Add a search feature.
-- [ ] Improve styling.
+- [✔] Improve styling.
