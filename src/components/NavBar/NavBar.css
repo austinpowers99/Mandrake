@@ -13,10 +13,10 @@
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     font-size: 2.5vmin;
     color: #000000;
-    padding: 2vmin;
+    padding: 2.5vmin;
     background-color: #2cc102;
 }
 
@@ -30,3 +30,7 @@
 a:hover {
     color: #87f841;
 }
+
+/* nav img {
+    width: 10vmin;
+} */
