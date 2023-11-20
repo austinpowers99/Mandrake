@@ -20,10 +20,18 @@ form {
   padding: 10vmin;
   padding-bottom: 32vmin;
   font-family: 'Tilt Prism', cursive;
+  font-size: 3.5vmin;
 }
 
 .about-container {
   background-color: #77F5FE;
-  padding: 6vmin;
+  padding: 2vmin 6vmin 10vmin 6vmin;
   border-radius: 5vmin;
+}
+
+.logo {
+  border-radius: 50%;
+  padding: 1vmin;
+  border: 1vmin solid #ede101;
+  margin: 4vmin 0 0 0;
 }

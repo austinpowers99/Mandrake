@@ -37,7 +37,7 @@ a:hover {
     width: 13vmin;
     margin: 0 0 0 6vmin;
     border-radius: 7vmin;
-    border: 0.5vmin solid rgb(255, 255, 255);
+    border: 0.5vmin solid #ede101;
     margin-right: auto;
     padding: .5vmin;
 }
