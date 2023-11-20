@@ -14,18 +14,19 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    /* font-size: 2.5vmin; */
     color: #000000;
-    padding: 2.5vmin;
+    padding: 2vmin;
     background-color: #2cc102;
 }
 
 .nav a {
+    display: flex;
     font-family: 'Tilt Prism', cursive;
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     padding-right: 6vmin;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    margin: 3vmin  0 0 .5vmin;
 }
 
 a:hover {
@@ -33,9 +34,9 @@ a:hover {
 }
 
 .nav-logo {
-    width: 12vmin;
+    width: 13vmin;
     margin: 0 0 0 6vmin;
-    border-radius: 6vmin;
+    border-radius: 7vmin;
     border: 0.5vmin solid rgb(255, 255, 255);
     margin-right: auto;
     padding: .5vmin;
