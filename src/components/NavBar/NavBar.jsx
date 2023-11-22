@@ -13,9 +13,7 @@ export default function NavBar({ user, setUser }) {
   return (
     <nav>
       <div className='nav'>
-        {/* <div className='logo'> */}
-          <img src={logo} alt="Mandrake Logo" className="nav-logo" />
-        {/* </div> */}
+        <img src={logo} alt="Mandrake Logo" className="nav-logo" />
 
         <Link to="/">Home</Link>
         <Link to="/categories">Categories</Link>
@@ -24,7 +22,7 @@ export default function NavBar({ user, setUser }) {
             <Link to="/plants">My Plants</Link>
 
             <Link to="/plants/new">Add New</Link>
-            &nbsp; &nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+            <Link to="" onClick={handleLogOut}>Log Out</Link>
           </>
         ) : (
           <>

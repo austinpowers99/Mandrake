@@ -1,21 +1,9 @@
-/* .nav-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #F5BC2C;
-    width: 7rem;
-    float: left;
-    height: 100vh;
-    padding-bottom: 120px;
-    font-size: large;
-} */
-
 .nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     color: #000000;
-    padding: 2vmin;
+    padding: 2vmin 0 2vmin 0;
     background-color: #2cc102;
 }
 
@@ -23,10 +11,10 @@
     display: flex;
     font-family: 'Tilt Prism', cursive;
     font-size: 3.5vmin;
-    padding-right: 6vmin;
+    padding-right: 5vmin;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    margin: 3vmin  0 0 .5vmin;
+    margin: 3vmin 0 0 0;
 }
 
 a:hover {
@@ -35,7 +23,7 @@ a:hover {
 
 .nav-logo {
     width: 13vmin;
-    margin: 0 0 0 6vmin;
+    margin: 0 0 0 5vmin;
     border-radius: 7vmin;
     border: 0.5vmin solid #ede101;
     margin-right: auto;
