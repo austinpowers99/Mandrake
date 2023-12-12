@@ -27,7 +27,6 @@ export default function AuthPage({ setUser }) {
         <LoginForm onSuccess={handleAuthSuccess} setUser={setUser} />
       </div>
       }
-      {/* Toggle button to switch between sign-up and log-in forms */}
       <button onClick={() => setShowSignUp(!showSignUp)}>{showSignUp ? 'Log In' : 'Sign Up'}</button>
     </main>
   );
