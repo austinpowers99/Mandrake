@@ -18,7 +18,7 @@ form {
   text-align: end;
   padding: 10vmin;
   padding-bottom: 32vmin;
-  font-family: 'Tilt Prism', cursive;
+  font-family: 'Poor Story';
   font-size: 3.5vmin;
 }
 
@@ -26,6 +26,7 @@ form {
   background-color: #77F5FE;
   padding: 2vmin 6vmin 10vmin 6vmin;
   border-radius: 5vmin;
+  border: solid 1vmin #a1ffafc7;
 }
 
 .logo {

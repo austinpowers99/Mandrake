@@ -5,11 +5,12 @@
     color: #000000;
     padding: 2vmin 0 2vmin 0;
     background-color: #2cc102;
+    border: solid 1vmin #a1ffafc7;
 }
 
 .nav a {
     display: flex;
-    font-family: 'Tilt Prism', cursive;
+    font-family: 'Poor Story';
     font-size: 3.5vmin;
     padding-right: 5vmin;
     text-decoration: none;
@@ -18,7 +19,7 @@
 }
 
 a:hover {
-    color: #87f841;
+    color: #ede101;
 }
 
 .nav-logo {

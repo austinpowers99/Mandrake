@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Tilt Prism', cursive;
+  font-family: 'Poor Story';
   color: #000000;
   text-align: center;
 }
@@ -19,7 +19,7 @@
   background-color: #ede101;
   padding: 2.5vmin;
   border-radius: 4vmin;
-  margin: 2vmin;
+  margin: 3vmin;
 }
 
 .category-card {
@@ -28,10 +28,10 @@
   padding: 2vmin;
   border: .5vmin solid #2cc102;
   border-radius: 3vmin;
-  font-family: 'Tilt Prism', cursive;
+  font-family: 'Poor Story';
   display: flex;
   flex-direction: column;
-  width: 25vmin;
+  width: 35vmin;
 }
 
 .my-plants {
@@ -51,7 +51,7 @@
   border: 3px solid #77F5FE;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .my-plants {
     grid-template-columns: 1fr; 
   }
@@ -59,4 +59,4 @@
   .plant-card {
     padding: 3vmin; 
   }
-}
+} */
