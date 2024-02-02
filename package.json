@@ -20,6 +20,7 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "serve-favicon": "^2.5.0",
+    "upath": "^2.0.1",
     "webpack": "^5.88.2"
   },
   "scripts": {
